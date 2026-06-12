@@ -38,4 +38,9 @@ public class AuthController {
         return authService
                 .login(request);
     }
+
+    @GetMapping("/test")
+    public String test() {
+        return "AUTH SERVICE WORKING";
+    }
 }
